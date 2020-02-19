@@ -21,4 +21,7 @@ public interface EchoService {
      */
     @GetMapping("/echo/{str}")
     public String echo(@PathVariable("str") String str);
+
+    @GetMapping("/lb")
+    public String lb();
 }
