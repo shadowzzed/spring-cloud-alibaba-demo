@@ -25,7 +25,7 @@ public class TestEchoController {
 
     @GetMapping(value = "/feign/echo/{str}")
     public String echo(@PathVariable("str") String str) {
-        return echoService.echo(str) + username;
+        return echoService.echo(str);
     }
 
     @GetMapping(value = "/feign/echo")
